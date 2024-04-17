@@ -4,6 +4,5 @@ Matrix like animation using HTML5 Canvas. Inspired from [sample code](http://the
 See it in action @ http://parambirs.github.io/matrix
 
 @ 2020-09-05 - added lively customizable options (rainbow / color select) - khuong
-
 @ 2024-04-17 - adding a clock and adapting to it - Nickan
 

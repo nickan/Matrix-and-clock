@@ -36,4 +36,4 @@ function updateTime() {
 updateTime();
 
 // Затем обновляем время каждую секунду
-setInterval(updateTime, 1000); // 1000 миллисекунд = 1 секунда
+setInterval(updateTime, 1000); // 1000 миллисекунд = 1 секундаапапапап
