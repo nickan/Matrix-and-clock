@@ -1,0 +1,17 @@
+{
+  "AppVersion": "1.0.0.0",
+  "Title": "Matrix Rain Customizable v2",
+  "Thumbnail": "zxxiwjat.jpg",
+  "Preview": "il205hgf.gif",
+  "Desc": "Matrix like rain animation using HTML5 Canvas.",
+  "Author": "parambirs / khuong /Nickan",
+  "License": "",
+  "Contact": "",
+  "Type": 1,
+  "FileName": "index.html",
+  "Arguments": null,
+  "IsAbsolutePath": false,
+  "Id": null,
+  "Tags": null,
+  "Version": 0
+}

@@ -1,0 +1,51 @@
+{
+  "matrixColor": {
+    "text": "Font Color",
+    "type": "color",
+    "value": "#00FF46"
+  },
+  "dateColor": {
+    "text": "Date Color",
+    "type": "color",
+    "value": "#FFFFFF"
+  },
+  "bagColor": {
+    "text": "Background Color",
+    "type": "color",
+    "value": "#FFFFFF"
+  },
+  "rainbowSpeed": {
+    "max": 100,
+    "min": 0,
+    "tick": 25,
+    "text": "Rainbow Speed",
+    "type": "slider",
+    "value": 50
+  },
+  "rainBow": {
+    "type": "checkbox",
+    "value": false,
+    "text": "Rainbow"
+  },
+  "borderRadius": {
+    "max": 200,
+    "min": 0,
+    "tick": 25,
+    "text": "Border radius",
+    "type": "slider",
+    "value": 10
+  },
+  "wrapperPadding": {
+    "max": 100,
+    "min": 30,
+    "tick": 25,
+    "text": "Padding",
+    "type": "slider",
+    "value": 30
+  },
+  "bordercheck": {
+    "type": "checkbox",
+    "value": false,
+    "text": "Background"
+  }
+}
