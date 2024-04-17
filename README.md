@@ -19,6 +19,8 @@ See it in action @ http://parambirs.github.io/matrix
 ![alt text](image.png)
 нажать на открыть расположения файла и в папку wallpapers загрузить проект перезапустить програму и можно наслаждаться 
 
+
+# Улучшенные настройки
 ![alt text](image-1.png)
 
 ![alt text](image-2.png)
