@@ -14,7 +14,7 @@ See it in action @ http://parambirs.github.io/matrix
 
 # AppData\Local\Packages\12030rocksdanister.LivelyWallpaper_97hta09mmv6hy\LocalCache\Local\Lively Wallpaper\Library\wallpapers
 
-Так же в папку можно попасть через прогу
+Так же в папку можно попасть через прогу.
 
 ![alt text](image.png)
 
