@@ -10,10 +10,15 @@ See it in action @ http://parambirs.github.io/matrix
 ![image](https://github.com/nickan/Matrix-and-clock/assets/143292344/16a02ee4-9383-4339-8436-a740b7cf97bc)
 
 
-Для установки обоев скачать проект с гит и закинуть в папку 
-AppData\Local\Packages\12030rocksdanister.LivelyWallpaper_97hta09mmv6hy\LocalCache\Local\Lively Wallpaper\Library\wallpapers
+# Для установки обоев скачать проект с гит и закинуть в папку 
+
+
+# AppData\Local\Packages\12030rocksdanister.LivelyWallpaper_97hta09mmv6hy\LocalCache\Local\Lively Wallpaper\Library\wallpapers
 Так же в папку можно попасть через прогу 
+
 ![alt text](image.png)
 нажать на открыть расположения файла и в папку wallpapers загрузить проект перезапустить програму и можно наслаждаться 
+
 ![alt text](image-1.png)
+
 ![alt text](image-2.png)
