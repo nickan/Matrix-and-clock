@@ -24,7 +24,7 @@ var root = {
 
 var c = document.getElementById("c");
 var ctx = c.getContext("2d");
-var wrapper = document.querySelector(".wrapper");
+var wrappers = document.querySelectorAll(".wrapper");
 
 var hueFw = false;
 var hue = -0.01;
@@ -93,21 +93,27 @@ function draw() {
   }
  
 }
+
+
 function updateWrapperColor() {
-  // Обновляем цвет фона элемента .wrapper
-      wrapper.style.color = "rgba(" + root.wrappercolor.r + "," + root.wrappercolor.g + "," + root.wrappercolor.b + ")";
-}
-function updateWrapperRadius() {
-  // Обновляем цвет фона элемента .wrapper
-  if (root.bordercheck) {
-    wrapper.style.backgroundColor = "rgba(" + root.bagcolor.r + "," + root.bagcolor.g + "," + root.bagcolor.b + ")";
-    wrapper.style.borderRadius = `${root.borderRadius}px`;
-    wrapper.style.padding = `${root.wrapperPadding}px`;
-  } else {
-      wrapper.style.backgroundColor = 'transparent';
-  }
+  // Обновляем цвет фона всех элементов .wrapper
+  wrappers.forEach(wrapper => {
+    wrapper.style.color = "rgba(" + root.wrappercolor.r + "," + root.wrappercolor.g + "," + root.wrappercolor.b + ")";
+  });
 }
 
+function updateWrapperRadius() {
+  // Обновляем стили для всех элементов .wrapper
+  wrappers.forEach(wrapper => {
+    if (root.bordercheck) {
+      wrapper.style.backgroundColor = "rgba(" + root.bagcolor.r + "," + root.bagcolor.g + "," + root.bagcolor.b + ")";
+      wrapper.style.borderRadius = `${root.borderRadius}px`;
+      wrapper.style.padding = `${root.wrapperPadding}px`;
+    } else {
+      wrapper.style.backgroundColor = 'transparent';
+    }
+  });
+}
 
 
 
