@@ -5,3 +5,5 @@ See it in action @ http://parambirs.github.io/matrix
 
 @ 2020-09-05 - added lively customizable options (rainbow / color select) - khuong
 @ 2024-04-17 - adding a clock and adapting to it - Nickan
+
+git remote add origin git@github.com:nickan/Matrix-and-clock.git
