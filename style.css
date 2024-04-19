@@ -38,9 +38,21 @@ canvas {
     background-color: transparent;
     border-radius: 0;
     padding: 50px;
+    -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 .wrapper2 {
  display: none;
+ -webkit-touch-callout: none;
+ -webkit-user-select: none;
+ -khtml-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
 }
 
 .week {
@@ -59,21 +71,8 @@ canvas {
 
 @media (min-width: 2560px) {
     .wrapper {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        top: 50%;
         left: 25%;
         transform: translate(-25%, -50%);
-        font-size: 100px;
-        color: white;
-        gap: 0px;
-        font-family: "Roboto", sans-serif;
-        background-color: transparent;
-        border-radius: 0;
-        padding: 50px;
     }
     .wrapper2 {
         position: absolute;
@@ -91,5 +90,11 @@ canvas {
         background-color: transparent;
         border-radius: 0;
         padding: 50px;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
     } 
 }
