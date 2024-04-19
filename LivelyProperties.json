@@ -20,7 +20,7 @@
     "tick": 25,
     "text": "Rainbow Speed",
     "type": "slider",
-    "value": 50
+    "value": 1
   },
   "rainBow": {
     "type": "checkbox",
@@ -42,6 +42,14 @@
     "text": "Padding",
     "type": "slider",
     "value": 30
+  },
+  "scaleWrapper": {
+    "max": 25,
+    "min": 5,
+    "tick": 25,
+    "text": "Scale",
+    "type": "slider",
+    "value": 10
   },
   "bordercheck": {
     "type": "checkbox",

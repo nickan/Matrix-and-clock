@@ -3,6 +3,7 @@ const minutes = document.querySelectorAll(".time__minutes");
 const seconds = document.querySelectorAll(".time__seconds"); // Селекторы для секунд
 const dateIndexes = document.querySelectorAll(".date");
 const weeks = document.querySelectorAll(".week");
+const scale = document.querySelectorAll(".scale");
 
 function updateTime() {
   const date = new Date();
