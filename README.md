@@ -25,3 +25,7 @@ See it in action @ http://parambirs.github.io/matrix
 ![alt text](image-1.png)
 
 ![alt text](image-2.png)
+
+# Добавлена функция изменения размера
+
+![alt text](image/scale.jpg)
