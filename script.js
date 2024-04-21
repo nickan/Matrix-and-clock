@@ -98,10 +98,14 @@ function draw() {
 
 function clokcheck(){
   if(root.clockCheck){
-wrappers.forEach(wrapper=>{
-  wrapper.style.display="none"
+    wrappers.forEach(wrapper=>{
+      wrapper.style.display="flex"
 })
   }
+  else{
+    wrappers.forEach(wrapper=>{
+      wrapper.style.display="none"
+  })
 }
 
 
