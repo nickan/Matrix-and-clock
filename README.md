@@ -29,3 +29,7 @@ See it in action @ http://parambirs.github.io/matrix
 # Добавлена функция изменения размера
 
 ![alt text](image/scale.jpg)
+
+# Добавлена функция отключения часов и горизонтальные, вертикальные часы 
+
+![alt text](image/Запись-2024-04-21-205243.gif)
