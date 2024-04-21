@@ -150,20 +150,22 @@ function scalewrap() {
   });
 }
 
-function horizontal(){
-  if(root.VerticalHorizontal){
-    wrappers.forEach((wrapper)=>{
-      wrapper.classList.add('horizontal');
-    })
-    document.querySelector('.time__minutes').classList.add('minutes')
+function horizontal() {
+  if (root.VerticalHorizontal) {
+    wrappers.forEach((wrapper) => {
+      wrapper.classList.add("horizontal");
+    });
+    minutes.forEach((minute) => {
+      minute.classList.add("minutes");
+    });
+  } else {
+    wrappers.forEach((wrapper) => {
+      wrapper.classList.remove("horizontal");
+    });
+    minutes.forEach((minute) => {
+      minute.classList.remove("minutes");
+    });
   }
-  else{
-    wrappers.forEach((wrapper)=>{
-      wrapper.classList.remove('horizontal');
-    })
-    document.querySelector('.time__minutes').classList.remove('minutes')
-  }
- 
 }
 
 window.onresize = () => {
@@ -195,14 +197,14 @@ function livelyPropertyListener(name, val) {
       root.bordercheck = val;
       updateWrapperRadius();
       break;
-      case "clockCheck":
-        root.clockCheck = val;
-        clokcheck() ;
-        break;
-      case "VerticalHorizontal":
-        root.VerticalHorizontal = val;
-        horizontal() ;
-        break;
+    case "clockCheck":
+      root.clockCheck = val;
+      clokcheck();
+      break;
+    case "VerticalHorizontal":
+      root.VerticalHorizontal = val;
+      horizontal();
+      break;
     case "borderRadius":
       root.borderRadius = val;
       updateWrapperRadius();
