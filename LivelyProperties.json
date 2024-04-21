@@ -30,7 +30,7 @@
   "clockCheck": {
     "type": "checkbox",
     "value": true,
-    "text": "Clock"
+    "text": "Clock on / off"
   },
   "VerticalHorizontal": {
     "type": "checkbox",

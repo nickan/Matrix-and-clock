@@ -56,7 +56,6 @@ canvas {
     flex-direction: row;
     flex-wrap: wrap;
     width: 300px;
-
  
 }
 
@@ -146,13 +145,6 @@ position: relative;
         width: 300px;
         
     }
-    .horizontal::after{
-        content: ":";
-        position: absolute;
-        top: 45px;
-        left: 47%;
-        border-radius: 50%;
-    
-    }
+
     
 }

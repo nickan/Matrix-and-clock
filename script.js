@@ -154,14 +154,14 @@ function horizontal(){
   if(root.VerticalHorizontal){
     wrappers.forEach((wrapper)=>{
       wrapper.classList.add('horizontal');
-      document.querySelector('.time__minutes').classList.add('minutes::after')
     })
+    document.querySelector('.time__minutes').classList.add('minutes')
   }
   else{
     wrappers.forEach((wrapper)=>{
       wrapper.classList.remove('horizontal');
-      document.querySelector('.time__minutes').classList.remove('minutes::after')
     })
+    document.querySelector('.time__minutes').classList.remove('minutes')
   }
  
 }
