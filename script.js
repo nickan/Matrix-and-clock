@@ -20,7 +20,7 @@ var root = {
   scaleWrapper: 0.5,
   wrapperPadding: 30,
   bordercheck: false,
-  clokcheck: false,
+  clockCheck: false,
   matrixspeed: 50,
 };
 
@@ -97,7 +97,7 @@ function draw() {
 }
 
 function clokcheck(){
-  if(root.bordercheck){
+  if(root.clockCheck){
 wrappers.forEach(wrapper=>{
   wrapper.style.display="none"
 })
@@ -150,9 +150,9 @@ function livelyPropertyListener(name, val) {
       root.bordercheck = val;
       updateWrapperRadius() ;
       break;
-    case "clokcheck":
-      root.bordercheck = val;
-      updateWrapperRadius() ;
+    case "clockCheck":
+      root.clockCheck = val;
+      clokcheck() ;
       break;
     case "borderRadius":
       root.borderRadius = val;
