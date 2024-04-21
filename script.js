@@ -21,6 +21,7 @@ var root = {
   wrapperPadding: 30,
   bordercheck: false,
   clockCheck: true,
+  VerticalHorizontal: false,
   matrixspeed: 50,
 };
 
@@ -149,6 +150,22 @@ function scalewrap() {
   });
 }
 
+function horizontal(){
+  if(root.VerticalHorizontal){
+    wrappers.forEach((wrapper)=>{
+      wrapper.classList.add('horizontal');
+      document.querySelector('.time__minutes').classList.add('minutes::after')
+    })
+  }
+  else{
+    wrappers.forEach((wrapper)=>{
+      wrapper.classList.remove('horizontal');
+      document.querySelector('.time__minutes').classList.remove('minutes::after')
+    })
+  }
+ 
+}
+
 window.onresize = () => {
   location.reload();
 };
@@ -181,6 +198,10 @@ function livelyPropertyListener(name, val) {
       case "clockCheck":
         root.clockCheck = val;
         clokcheck() ;
+        break;
+      case "VerticalHorizontal":
+        root.VerticalHorizontal = val;
+        horizontal() ;
         break;
     case "borderRadius":
       root.borderRadius = val;

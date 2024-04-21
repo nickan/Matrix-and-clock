@@ -29,8 +29,13 @@
   },
   "clockCheck": {
     "type": "checkbox",
-    "value": false,
+    "value": true,
     "text": "Clock"
+  },
+  "VerticalHorizontal": {
+    "type": "checkbox",
+    "value": false,
+    "text": "Vertical / Horizontal"
   },
   "borderRadius": {
     "max": 200,
