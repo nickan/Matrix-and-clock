@@ -55,5 +55,10 @@
     "type": "checkbox",
     "value": false,
     "text": "Background"
+  },
+  "clokcheck": {
+    "type": "checkbox",
+    "value": false,
+    "text": "Background"
   }
 }

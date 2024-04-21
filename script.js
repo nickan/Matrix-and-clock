@@ -20,6 +20,7 @@ var root = {
   scaleWrapper: 0.5,
   wrapperPadding: 30,
   bordercheck: false,
+  clokcheck: false,
   matrixspeed: 50,
 };
 
@@ -95,13 +96,14 @@ function draw() {
  
 }
 
-
-function updateWrapperColor() {
-  // Обновляем цвет фона всех элементов .wrapper
-  wrappers.forEach(wrapper => {
-    wrapper.style.color = "rgba(" + root.wrappercolor.r + "," + root.wrappercolor.g + "," + root.wrappercolor.b + ")";
-  });
+function clokcheck(){
+  if(root.bordercheck){
+wrappers.forEach(wrapper=>{
+  wrapper.style.display="none"
+})
+  }
 }
+
 
 function updateWrapperRadius() {
   // Обновляем стили для всех элементов .wrapper
@@ -116,14 +118,7 @@ function updateWrapperRadius() {
   });
 }
 
-function scalewrap() {
-  wrappers.forEach(wrapper => {
-    wrapper.style.transform = `translate(-50%, -50%) scale(${root.scaleWrapper / 10})`;
-  });
 
-  
-}
-scalewrap();
 
 window.onresize = () => {
   location.reload();
@@ -152,6 +147,10 @@ function livelyPropertyListener(name, val) {
       root.rainbowSpeed = val / 100;
       break;
     case "bordercheck":
+      root.bordercheck = val;
+      updateWrapperRadius() ;
+      break;
+    case "clokcheck":
       root.bordercheck = val;
       updateWrapperRadius() ;
       break;
