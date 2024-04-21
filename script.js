@@ -20,7 +20,7 @@ var root = {
   scaleWrapper: 0.5,
   wrapperPadding: 30,
   bordercheck: false,
-  clockCheck: false,
+  clockCheck: true,
   matrixspeed: 50,
 };
 
@@ -93,41 +93,65 @@ function draw() {
     // adding randomness to the reset to make the drops scattered on the Y axis
     if (drops[i] * font_size > c.height && Math.random() > 0.975) drops[i] = 0;
   }
- 
 }
 
-function clokcheck(){
-  if(root.clockCheck){
-    wrappers.forEach(wrapper=>{
-      wrapper.style.display="flex"
-})
+function clokcheck() {
+  if (root.clockCheck) {
+    wrappers.forEach((wrapper) => {
+      wrapper.style.display = "flex";
+    });
+  } else {
+    wrappers.forEach((wrapper) => {
+      wrapper.style.display = "none";
+    });
   }
-  else{
-    wrappers.forEach(wrapper=>{
-      wrapper.style.display="none"
-  })
 }
 
+function updateWrapperColor() {
+  // Обновляем цвет фона всех элементов .wrapper
+  wrappers.forEach((wrapper) => {
+    wrapper.style.color =
+      "rgba(" +
+      root.wrappercolor.r +
+      "," +
+      root.wrappercolor.g +
+      "," +
+      root.wrappercolor.b +
+      ")";
+  });
+}
 
 function updateWrapperRadius() {
   // Обновляем стили для всех элементов .wrapper
-  wrappers.forEach(wrapper => {
+  wrappers.forEach((wrapper) => {
     if (root.bordercheck) {
-      wrapper.style.backgroundColor = "rgba(" + root.bagcolor.r + "," + root.bagcolor.g + "," + root.bagcolor.b + ")";
+      wrapper.style.backgroundColor =
+        "rgba(" +
+        root.bagcolor.r +
+        "," +
+        root.bagcolor.g +
+        "," +
+        root.bagcolor.b +
+        ")";
       wrapper.style.borderRadius = `${root.borderRadius}px`;
       wrapper.style.padding = `${root.wrapperPadding}px`;
     } else {
-      wrapper.style.backgroundColor = 'transparent';
+      wrapper.style.backgroundColor = "transparent";
     }
   });
 }
 
-
+function scalewrap() {
+  wrappers.forEach((wrapper) => {
+    wrapper.style.transform = `translate(-50%, -50%) scale(${
+      root.scaleWrapper / 10
+    })`;
+  });
+}
 
 window.onresize = () => {
   location.reload();
 };
-
 
 setInterval(draw, root.matrixspeed);
 
@@ -152,12 +176,12 @@ function livelyPropertyListener(name, val) {
       break;
     case "bordercheck":
       root.bordercheck = val;
-      updateWrapperRadius() ;
+      updateWrapperRadius();
       break;
-    case "clockCheck":
-      root.clockCheck = val;
-      clokcheck() ;
-      break;
+      case "clockCheck":
+        root.clockCheck = val;
+        clokcheck() ;
+        break;
     case "borderRadius":
       root.borderRadius = val;
       updateWrapperRadius();
@@ -166,10 +190,10 @@ function livelyPropertyListener(name, val) {
       root.wrapperPadding = val;
       updateWrapperRadius();
       break;
-      case "scaleWrapper":
-        root.scaleWrapper = val;
-        scalewrap();
-        break;
+    case "scaleWrapper":
+      root.scaleWrapper = val;
+      scalewrap();
+      break;
   }
 }
 function hexToRgb(hex) {
