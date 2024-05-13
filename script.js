@@ -120,6 +120,7 @@ function updateWrapperColor() {
       root.wrappercolor.b +
       ")";
   });
+  
 }
 
 function updateWrapperRadius() {

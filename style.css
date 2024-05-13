@@ -45,7 +45,6 @@ canvas {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-    
    
 }
 .horizontal{
@@ -111,6 +110,7 @@ position: relative;
     .wrapper {
         left: 25%;
         transform: translate(-25%, -50%);
+        
     }
     .wrapper2 {
         position: absolute;
