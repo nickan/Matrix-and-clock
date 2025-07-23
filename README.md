@@ -7,6 +7,7 @@ See it in action @ http://parambirs.github.io/matrix
 @ 2020-09-05 - added lively customizable options (rainbow / color select) - khuong
 
 @ 2024-04-17 - adding a clock and adapting to it - Nickan
+# Добавлена функция для двух мониторов но сделана через костыль если монитор больше 4к часов становится двое. Поэтому нужно ставить обои в режиме копировать и если у вас 2 монитора по 2к все будет норм работать делал под себя поэтому если у когото будут баги пишите https://lolz.live/threads/8985803/ 
 
 ![image](https://github.com/nickan/Matrix-and-clock/assets/143292344/16a02ee4-9383-4339-8436-a740b7cf97bc)
 
